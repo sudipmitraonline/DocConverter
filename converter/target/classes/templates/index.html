@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Converter</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <h1>Image and Word Document Converter</h1>
+    <form action="/image-to-pdf" method="post" enctype="multipart/form-data">
+        <h2>Convert Image to PDF</h2>
+        <input type="file" name="image" accept="image/*" required>
+        <input type="submit" value="Convert">
+    </form>
+    <button type="reset" onclick="resetForm()">Reset</button>
+</div>
+
+<script>
+    function resetForm() {
+        document.querySelector('form').reset();
+    }
+</script>
+</body>
+</html>
